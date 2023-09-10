@@ -1,0 +1,24 @@
+.MiuTextField .MuiFormLabel-root {
+  color: #858C94;
+}
+
+.MiuTextField .MuiInputBase-input {
+  background: white;
+  color: #858C94;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.MiuTextField.full-radius .MuiInputBase-input {
+  border-radius: 8px;
+}
+
+.MiuTextField .MuiInputBase-root {
+  background: white;
+}
+
+.MiuTextField .MuiButtonBase-root {
+  color: #858C94;
+}
