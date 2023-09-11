@@ -9,9 +9,9 @@ import {
 
 import { SideMenuRoutes } from './SideMenuRoutes';
 import { PrivateRoute } from './PrivateRoute';
-import Login from 'Pages/Login';
+import Login from './../Pages/Login';
 import CreateUser from '@components/CreateUser/CreateUser';
-import NotFound from 'Pages/NoFound';
+import NotFound from './../Pages/NoFound';
 
 export const AppRouter = () => {
     return (
