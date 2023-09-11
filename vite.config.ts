@@ -6,14 +6,12 @@ import envDev from './config/config.env';
 import envProd from './config/config.prod';
 
 const isDev = process.env.NODE_ENV === 'development';
-console.log("🚀 ~ file: vite.config.ts:9 ~ isDev:", isDev)
 
 const env = isDev ? envDev : envProd;
 
 export default defineConfig({
   plugins: [reactRefresh(), tsconfigPaths()],
   define: {
-    global: {},
     'process.env.API_URL': JSON.stringify(env.API_URL),
     'process.env.PORT': env.PORT,
   },
@@ -22,6 +20,8 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
+    minify: isDev ? false : 'terser',
+    sourcemap: isDev,
   },
   resolve: {
     alias: {
