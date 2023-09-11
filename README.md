@@ -84,3 +84,9 @@ yarn dev
 - <img src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg" alt="Imagen" width="30" heigth="30" /> Mui
 - <img src="https://cdn.worldvectorlogo.com/logos/vitejs.svg" alt="Imagen" width="30" heigth="30" /> Vite
 
+- # Notas
+Sito:
+ <a target="_blank" href="https://pokemon-test-frontend-mb5cf8bah-tony0217.vercel.app/">Mirar Sito Web </a> 
+
+Endpoints:
+ <a target="_blank"  href="https://pokemon-test-backend-production.up.railway.app/">Mirar  Documentacion </a> 
