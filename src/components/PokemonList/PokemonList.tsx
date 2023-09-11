@@ -21,6 +21,7 @@ import { pokemonService } from '@api/pokemon';
 import { useAuthContext } from '@lib/Context/AuthContext';
 import { userService } from '@api/users';
 import PokeLoading from '@components/Shared/PokeLoading';
+import axiosInstance from "@lib/adapters/axios-adapter";
 
 const LargerAvatar = styled(Avatar)(() => ({
   width: '100px',

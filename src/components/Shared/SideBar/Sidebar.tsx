@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
   Drawer,
   List,
@@ -46,6 +46,7 @@ const Username = styled(Typography)(({ theme }) => ({
 
 const Sidebar = () => {
   const location = useLocation();
+  const navigate = useNavigate()
   const { userInfo, isAuthenticated } = useAuthContext();
 
   const menuOptions = [
@@ -69,7 +70,8 @@ const Sidebar = () => {
 
   const handleLogout = () => {
     localStorage.clear();
-    window.location.reload();
+    navigate('/');
+    
   };
 
   if (!isAuthenticated || !menuOptions.some((option) => location.pathname === option.path)) {
