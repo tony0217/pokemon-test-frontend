@@ -1,5 +1,2 @@
 # Redirige todas las solicitudes a index.html para el enrutamiento del lado del cliente
 /*    /index.html   200
-
-# Redirección personalizada de una ruta antigua a una nueva
-/pokemon-list    /PokemonList.html  301
