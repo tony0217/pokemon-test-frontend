@@ -22,12 +22,12 @@ import { useAuthContext } from '@lib/Context/AuthContext';
 import { userService } from 'api/users';
 import PokeLoading from '@components/Shared/PokeLoading';
 
-const LargerAvatar = styled(Avatar)(({ theme }) => ({
+const LargerAvatar = styled(Avatar)(() => ({
   width: '100px',
   height: '100px',
 }));
 
-const LoadingContainer = styled(Box)(({ theme }) => ({
+const LoadingContainer = styled(Box)(() => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',

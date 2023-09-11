@@ -67,7 +67,7 @@ function Login() {
       authService
         .login(formData)
         .then((response) => {
-          const { _id: id, token, fullName, ...rest } = response;
+          const { _id: id, token, fullName } = response;
           if (response) {
             authLogin(true);
             setUser({ id, token, fullName });

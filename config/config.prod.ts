@@ -1,5 +1,5 @@
 const env = {
-  API_URL: 'https://api.prod.example.com',
+  API_URL: 'https://pokemon-test-backend-production.up.railway.app/',
   PORT: 3004,
 };
 

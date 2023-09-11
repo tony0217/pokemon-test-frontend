@@ -5,13 +5,12 @@ import {
   CardHeader,
   Typography,
   Avatar,
-  CircularProgress,
   Container,
   styled,
   Grid,
   Alert,
   Box,
-  Button, // Importar Box para el contenedor de carga
+  Button,
 } from '@mui/material';
 import { headerTextStyle } from '@styles/theme';
 import { getTypeColor } from '@lib/utils/get-color-type';
@@ -51,7 +50,7 @@ const ScrollableContainer = styled(Box)(() => ({
   maxHeight: '500px',
 }));
 
-const LoadingContainer = styled(Box)(({ theme }) => ({
+const LoadingContainer = styled(Box)(() => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',

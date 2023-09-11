@@ -20,6 +20,9 @@ export default defineConfig({
   server: {
     port: env.PORT,
   },
+  build: {
+    outDir: 'dist',
+  },
   resolve: {
     alias: {
       './runtimeConfig': './runtimeConfig.browser',
