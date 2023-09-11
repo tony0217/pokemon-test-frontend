@@ -1,11 +1,9 @@
-# Configuración de la versión de Netlify
 [build]
-  base = "dist"  # Directorio de salida de Vite
-  command = "npm run build"  # Comando para construir tu aplicación Vite
-  publish = "dist"  # Directorio de publicación
+  base = "dist"
+  command = "npm run build"
+  publish = "dist"
 
-# Configuración de redirecciones para una SPA (Single Page Application)
 [[redirects]]
-  from = "/*"  # Todas las solicitudes
-  to = "/index.html"  # Redirige a index.html
-  status = 200  # Código de respuesta 200 (OK)
+  from = "/*"
+  to = "/index.html"
+  status = 200
