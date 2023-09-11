@@ -1,3 +1,4 @@
+import path from 'path';
 import reactRefresh from '@vitejs/plugin-react-refresh';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
@@ -15,6 +16,7 @@ export default defineConfig({
     'process.env.API_URL': JSON.stringify(env.API_URL),
     'process.env.PORT': env.PORT,
   },
+  
   server: {
     port: env.PORT,
   },
@@ -34,6 +36,12 @@ export default defineConfig({
   resolve: {
     alias: {
       './runtimeConfig': './runtimeConfig.browser',
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
+      '@lib': path.resolve(__dirname, 'src/lib'),
+      '@public': path.resolve(__dirname, 'src/public'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
     },
   },
 });
