@@ -13,7 +13,6 @@ const env = isDev ? envDev : envProd;
 export default defineConfig({
   plugins: [reactRefresh(), tsconfigPaths()],
   define: {
-    global: {},
     'process.env.API_URL': JSON.stringify(env.API_URL),
     'process.env.PORT': env.PORT,
   },

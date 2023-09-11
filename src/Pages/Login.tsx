@@ -11,7 +11,7 @@ import {
   Alert,
   AlertTitle,
 } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
 
 import pokemonImage from './../assets/icons/pokemon.svg';
 import pikachuImage from './../assets/icons/pikachu.svg';
@@ -23,6 +23,7 @@ import { useAuthContext } from '@lib/Context/AuthContext';
 import { LoginUser } from '@lib/interfaces/auth.interface';
 
 function Login() {
+  const navigate = useNavigate()
   const [formData, setFormData] = useState<LoginUser>({
     email: '',
     password: '',
@@ -71,7 +72,7 @@ function Login() {
           if (response) {
             authLogin(true);
             setUser({ id, token, fullName });
-            location.replace('/pokemon-list');
+            navigate('/pokemon-list');
           } else {
             authLogin(false);
             setShowErrorAlert(true);
