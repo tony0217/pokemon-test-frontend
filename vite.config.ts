@@ -22,6 +22,14 @@ export default defineConfig({
     outDir: 'dist',
     minify: isDev ? false : 'terser',
     sourcemap: isDev,
+    rollupOptions: {
+      external: [
+        "@styles/theme",
+        "Routes/AppRouter",
+        "@lib/Context/AuthContext",
+        "@components/Shared/SideBar/Sidebar"
+      ],
+    },
   },
   resolve: {
     alias: {
