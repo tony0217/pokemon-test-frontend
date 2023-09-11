@@ -16,10 +16,10 @@ import {
 } from '@mui/material';
 
 import MenuIcon from '@mui/icons-material/Menu';
-import pokeBall from 'assets/icons/Pokeball.png';
-import loveBall from 'assets/icons/love-ball.png';
-import profile from 'assets/icons/red.jpeg';
-import listUser from 'assets/icons/list-trainers.png';
+import pokeBall from './../../../assets/icons/Pokeball.png';
+import loveBall from './../../../assets/icons/love-ball.png';
+import profile from './../../../assets/icons/red.jpeg';
+import listUser from './../../../assets/icons/list-trainers.png';
 import { useAuthContext } from '@lib/Context/AuthContext';
 
 const drawerWidth = 240;

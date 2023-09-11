@@ -13,8 +13,8 @@ import {
 } from '@mui/material';
 import ReactCardFlip from 'react-card-flip';
 import { headerTextStyle } from '@styles/theme';
-import pokemonImage from 'assets/icons/pokemon.svg';
-import loveBall from 'assets/icons/love-ball.png';
+import pokemonImage from './../../assets/icons/pokemon.svg';
+import loveBall from './../../assets/icons/love-ball.png';
 import { getTypeColor } from '@lib/utils/get-color-type';
 import { PokemonData } from '@lib/interfaces/pokemon.interfece';
 import { pokemonService } from 'api/pokemon';

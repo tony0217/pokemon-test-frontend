@@ -13,9 +13,9 @@ import {
 } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-import pokemonImage from 'assets/icons/pokemon.svg';
-import pikachuImage from 'assets/icons/pikachu.svg';
-import LogoImage from 'assets/icons/Logo-Waco.svg';
+import pokemonImage from './../assets/icons/pokemon.svg';
+import pikachuImage from './../assets/icons/pikachu.svg';
+import LogoImage from './../assets/icons/Logo-Waco.svg';
 import { backgroundGradient, headerTextStyle } from '@styles/theme';
 import { isValidEmail } from '@lib/utils/validates';
 import { authService } from 'api/auth';
