@@ -10,7 +10,7 @@ import {
   AlertTitle,
 } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
-import { authService } from 'api/auth';
+import { authService } from '@api/auth';
 import { CreateUserData } from '@lib/interfaces/auth.interface';
 import { isValidEmail, isValidPassword } from '@lib/utils/validates';
 
