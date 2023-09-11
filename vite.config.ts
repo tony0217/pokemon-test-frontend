@@ -13,6 +13,7 @@ const env = isDev ? envDev : envProd;
 export default defineConfig({
   plugins: [reactRefresh(), tsconfigPaths()],
   define: {
+    global: {},
     'process.env.API_URL': JSON.stringify(env.API_URL),
     'process.env.PORT': env.PORT,
   },
@@ -24,14 +25,6 @@ export default defineConfig({
     outDir: 'dist',
     minify: isDev ? false : 'terser',
     sourcemap: isDev,
-    // rollupOptions: {
-    //   external: [
-    //     "@styles/theme",
-    //     "Routes/AppRouter",
-    //     "@lib/Context/AuthContext",
-    //     "@components/Shared/SideBar/Sidebar"
-    //   ],
-    // },
   },
   resolve: {
     alias: {
