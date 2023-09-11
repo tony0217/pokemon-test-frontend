@@ -17,9 +17,9 @@ import pokemonImage from './../../assets/icons/pokemon.svg';
 import loveBall from './../../assets/icons/love-ball.png';
 import { getTypeColor } from '@lib/utils/get-color-type';
 import { PokemonData } from '@lib/interfaces/pokemon.interfece';
-import { pokemonService } from 'api/pokemon';
+import { pokemonService } from '@api/pokemon';
 import { useAuthContext } from '@lib/Context/AuthContext';
-import { userService } from 'api/users';
+import { userService } from '@api/users';
 import PokeLoading from '@components/Shared/PokeLoading';
 
 const LargerAvatar = styled(Avatar)(() => ({

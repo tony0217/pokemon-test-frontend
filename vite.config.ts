@@ -42,6 +42,7 @@ export default defineConfig({
       '@public': path.resolve(__dirname, 'src/public'),
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@assets': path.resolve(__dirname, 'src/assets'),
+      '@api': path.resolve(__dirname, 'src/api'),
     },
   },
 });

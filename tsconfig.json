@@ -23,6 +23,7 @@
       "@public/*": ["public/*"],
       "@pages/*": ["pages/*"],
       "@assets/*": ["assets/*"],
+      "@api/*": ["api/*"],
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx", "react-app-env.d.ts"],

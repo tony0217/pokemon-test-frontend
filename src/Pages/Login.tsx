@@ -18,7 +18,7 @@ import pikachuImage from './../assets/icons/pikachu.svg';
 import LogoImage from './../assets/icons/Logo-Waco.svg';
 import { backgroundGradient, headerTextStyle } from '@styles/theme';
 import { isValidEmail } from '@lib/utils/validates';
-import { authService } from 'api/auth';
+import { authService } from '@api/auth';
 import { useAuthContext } from '@lib/Context/AuthContext';
 import { LoginUser } from '@lib/interfaces/auth.interface';
 

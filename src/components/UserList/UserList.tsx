@@ -13,7 +13,7 @@ import {
   Box,
 } from '@mui/material';
 import { headerTextStyle } from '@styles/theme';
-import { userService } from 'api/users';
+import { userService } from '@api/users';
 import PokeLoading from '@components/Shared/PokeLoading';
 
 interface UserData {
